@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lucsomers/S6_GitHubActionPOC/issues"
   },
+  "publishConfig": {
+    "@lucsomers:registry": "https://npm.pkg.github.com"
+  },
   "homepage": "https://github.com/lucsomers/S6_GitHubActionPOC#readme"
 }
