@@ -1,5 +1,5 @@
 {
-  "name": "lucsomers",
+  "name": @"lucsomers/S6_GitHubActionPOC",
   "version": "1.0.0",
   "description": "This is a proof of concept project to learn more about GitHub actions as a CI/CD option",
   "main": "index.js",
