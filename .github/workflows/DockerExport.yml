@@ -1,0 +1,11 @@
+name: export-docker-container
+on: push
+
+jobs:
+  job-name:
+    runs-on: ubuntu-latest
+    services:
+      testing-service:
+        image: hoeleboele:docker-image
+        ports:
+           - 3001:3000
