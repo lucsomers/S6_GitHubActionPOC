@@ -1,9 +1,9 @@
 name: export-docker-container
 on: 
   push:
-    branches: [GithubActions]
+    branches: [ GithubActions ]
   pull_request:
-    branches: [GithubActions]
+    branches: [ GithubActions ]
 
 jobs:
   job-name:
