@@ -18,4 +18,4 @@ jobs:
 
     steps:
       - name: Get from service-1
-        run: http://localhost:3001/api/users
+        run: docker push hoeleboele/docker-image
