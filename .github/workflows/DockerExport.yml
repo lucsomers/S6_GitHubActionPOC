@@ -6,12 +6,13 @@ on:
     branches: [ GithubActions ]
   
   workflow_dispatch:
-
-uses: https://hub.docker.com/
-with: https://hub.docker.com/
-  login-server:
-  username: ${{DOCKERHUB_USERNAME}}
-  password: ${{DOCKER_PASSWORD}}
+  
+docker-login:
+- uses: https://hub.docker.com/
+- with: https://hub.docker.com/
+    login-server:
+    username: ${{DOCKERHUB_USERNAME}}
+    password: ${{DOCKER_PASSWORD}}
 
 jobs:
   export-docker-image:
