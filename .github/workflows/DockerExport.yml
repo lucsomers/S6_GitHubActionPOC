@@ -6,11 +6,10 @@ on:
     branches: [ GithubActions ]
   
   workflow_dispatch:
-  
-docker-login:
-- uses: https://hub.docker.com/
-- with: https://hub.docker.com/
-    login-server:
+
+uses: https://hub.docker.com/
+with:
+    login-server: https://hub.docker.com/
     username: ${{DOCKERHUB_USERNAME}}
     password: ${{DOCKER_PASSWORD}}
 
