@@ -7,6 +7,12 @@ on:
   
   workflow_dispatch:
 
+uses: https://hub.docker.com/
+with: https://hub.docker.com/
+  login-server:
+  username: ${{DOCKERHUB_USERNAME}}
+  password: ${{DOCKER_PASSWORD}}
+
 jobs:
   export-docker-image:
     runs-on: ubuntu-latest
