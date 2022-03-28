@@ -1,15 +1,21 @@
-name: export-docker-container
+name: DockerExport
 on: 
   push:
     branches: [ GithubActions ]
   pull_request:
     branches: [ GithubActions ]
+  
+  workflow_dispatch:
 
 jobs:
-  job-name:
+  export-docker-image:
     runs-on: ubuntu-latest
     services:
       testing-service:
         image: hoeleboele:docker-image
         ports:
            - 3001:3000
+
+    steps:
+      - name: Get from service-1
+        run: http://localhost:3001/api/users
