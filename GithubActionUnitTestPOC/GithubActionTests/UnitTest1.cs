@@ -10,8 +10,11 @@ namespace GithubActionTests
 
             bank.AddMoney(1);
 
-            Assert.AreEqual(1, bank.CurrentMoney);
-            Assert.AreEqual(2, bank.CurrentMoney);
+            Assert.AreEqual(1, bank.CurrentMoney, "Money is correctlyChanged");
+
+            bank.SubstractMoney(1);
+
+            Assert.AreEqual(0, bank.CurrentMoney, "Money is correctlyChanged");
         }
     }
 }
