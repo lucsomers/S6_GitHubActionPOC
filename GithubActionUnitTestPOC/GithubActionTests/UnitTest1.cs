@@ -15,6 +15,7 @@ namespace GithubActionTests
             bank.SubstractMoney(1);
 
             Assert.AreEqual(0, bank.CurrentMoney, "Money is correctlyChanged");
+
         }
     }
 }
