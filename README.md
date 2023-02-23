@@ -4,4 +4,4 @@ a new line
 
 Another new line
 
-all these lines
+Lines
